@@ -1,0 +1,10 @@
+.myProfile {
+   grid-area: myProfile;
+ 
+   
+   background-color: blanchedalmond;
+ }
+
+.item {
+   color: blue;
+}

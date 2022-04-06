@@ -1,10 +1,15 @@
 
 import './App.css';
+import Header from './components/header';
+import MyProfile from './components/my-profile';
+import Sidebar from './components/sidebar';
 
 function App() {
   return (
-    <div className="App">
-      
+    <div className="app-wrapper">
+      <Header />
+      <Sidebar />
+      <MyProfile />
     </div>
   );
 }

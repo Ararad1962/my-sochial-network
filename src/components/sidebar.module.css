@@ -1,0 +1,10 @@
+.sidebar {
+   grid-area: sidebar;
+   
+   background-color: blue;
+ }
+ 
+ .item a {
+   color: white;
+   text-decoration: none;
+ }
