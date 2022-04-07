@@ -1,8 +1,8 @@
 
 import './App.css';
-import Header from './components/header';
-import MyProfile from './components/my-profile';
-import Sidebar from './components/sidebar';
+import Header from './components/Header/header';
+import MyProfile from './components/MyProfile/my-profile';
+import Sidebar from './components/Sidebar/sidebar';
 
 function App() {
   return (
