@@ -5,10 +5,16 @@ const Sidebar = () => {
    return (
       <nav className={s.sidebar}>
          <div className={s.item}>
-            <NavLink to ="/MyProfile" >Profile</NavLink>
+            <NavLink to="/MyProfile" className={
+               ({ isActive }) =>
+               isActive ? s.activeLink : undefined
+            } >ProFile</NavLink>
          </div>
          <div className={s.item}>
-            <NavLink to ="/Dialogs">Messages</NavLink>
+            <NavLink to="/Dialogs" className={
+               ({ isActive }) =>
+               isActive ? s.activeLink : undefined
+            }>Messages</NavLink>
          </div>
          <div className={s.item}>
             <a href="#$">News</a>
@@ -19,7 +25,7 @@ const Sidebar = () => {
          <div className={s.item}>
             <a href="#$">Settings</a>
          </div>
-         
+
       </nav>
 
    );
