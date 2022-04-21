@@ -5,7 +5,7 @@ import Dialogs from './components/Dialogs/Dialogs';
 import Header from './components/Header/header';
 import MyProfile from './components/MyProfile/my-profile';
 import Sidebar from './components/Sidebar/sidebar';
-import state from './Redux/state';
+
 
 function App(props) {
   
@@ -19,12 +19,12 @@ function App(props) {
         <Routes>
           <Route path="/myProfile/" 
             element={<MyProfile 
-              posts = {state.myProfilePage}
+              posts = {props.state.myProfilePage}
             />} 
           />
           <Route path="/Dialogs/"
             element={<Dialogs 
-              dialogs = {state.dialogsPage} 
+              dialogs = {props.state.dialogsPage} 
             />}
           />
         </Routes>
