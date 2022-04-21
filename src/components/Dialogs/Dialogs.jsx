@@ -9,8 +9,19 @@ import s from "./Dialogs.module.css";
 
 const Dialogs = (props) => {
 
-   let DialogsElements = props.dialogs.map(dialog => <DialogItem id={dialog.id} name={dialog.name} />);
-   let MessageElements = props.messages.map(phrase => <Message message={phrase.message} />);
+   let DialogsElements = 
+      props.dialogs.DialogsData.map(dialog =>
+         <DialogItem 
+            id={dialog.id} 
+            name={dialog.name}
+         />
+      );
+   let MessageElements = 
+      props.dialogs.MessageData.map(phrase => 
+         <Message 
+            message={phrase.message}
+         />
+      );
    
    return (
       <div className={s.dialogs}>

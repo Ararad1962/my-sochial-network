@@ -11,7 +11,7 @@ const MyProfile = (props) => {
 
       <div className={s.myProfile}>
          <ProfileInfo />
-         <MyPosts Posts = {props.Posts}/>
+         <MyPosts Posts = {props.posts.PostData}/>
 
       </div>
    );

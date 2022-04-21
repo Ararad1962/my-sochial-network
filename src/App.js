@@ -5,6 +5,7 @@ import Dialogs from './components/Dialogs/Dialogs';
 import Header from './components/Header/header';
 import MyProfile from './components/MyProfile/my-profile';
 import Sidebar from './components/Sidebar/sidebar';
+import state from './Redux/state';
 
 function App(props) {
   
@@ -16,8 +17,16 @@ function App(props) {
 
       <div className='app-wrapper-content'>
         <Routes>
-          <Route path="/myProfile/" element={<MyProfile Posts = {props.Posts}/>} />
-          <Route path="/Dialogs/" element={<Dialogs dialogs = {props.dialogs} messages = {props.messages} />} />
+          <Route path="/myProfile/" 
+            element={<MyProfile 
+              posts = {state.myProfilePage}
+            />} 
+          />
+          <Route path="/Dialogs/"
+            element={<Dialogs 
+              dialogs = {state.dialogsPage} 
+            />}
+          />
         </Routes>
       </div>
 
