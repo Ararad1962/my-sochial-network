@@ -9,20 +9,26 @@ import s from "./Dialogs.module.css";
 
 const Dialogs = (props) => {
 
-   let DialogsElements = 
+   let DialogsElements =
       props.dialogs.DialogsData.map(dialog =>
-         <DialogItem 
-            id={dialog.id} 
+         <DialogItem
+            id={dialog.id}
             name={dialog.name}
          />
       );
-   let MessageElements = 
-      props.dialogs.MessageData.map(phrase => 
-         <Message 
+   let MessageElements =
+      props.dialogs.MessageData.map(phrase =>
+         <Message
             message={phrase.message}
          />
       );
-   
+
+   let newMessageElement = React.createRef();
+   const newMessage = () => {
+      let newMessageContent = newMessageElement.current.value;
+      alert(newMessageContent);
+   };
+
    return (
       <div className={s.dialogs}>
          <div className={s.dialogItems}>
@@ -37,7 +43,14 @@ const Dialogs = (props) => {
             {
                MessageElements
             }
+            <div>
+               <textarea ref={newMessageElement}></textarea>
+            </div>
+            <div>
+               <button onClick={newMessage}>Send</button>
+            </div>
          </div>
+
       </div>
    )
 };

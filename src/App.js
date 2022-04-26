@@ -5,10 +5,12 @@ import Dialogs from './components/Dialogs/Dialogs';
 import Header from './components/Header/header';
 import MyProfile from './components/MyProfile/my-profile';
 import Sidebar from './components/Sidebar/sidebar';
+import { addPost } from './Redux/state';
+
 
 
 function App(props) {
-  
+  // props.addPost('sagsdgh');
   return (
 <BrowserRouter>
     <div className="app-wrapper">
@@ -20,6 +22,7 @@ function App(props) {
           <Route path="/myProfile/" 
             element={<MyProfile 
               posts = {props.state.myProfilePage}
+              addPost = {addPost}
             />} 
           />
           <Route path="/Dialogs/"
