@@ -19,6 +19,13 @@ function App(props) {
 
       <div className='app-wrapper-content'>
         <Routes>
+
+          <Route path="/" 
+            element={<MyProfile 
+              posts = {props.state.myProfilePage}
+              addPost = {addPost}
+            />} 
+          />
           <Route path="/myProfile/" 
             element={<MyProfile 
               posts = {props.state.myProfilePage}
