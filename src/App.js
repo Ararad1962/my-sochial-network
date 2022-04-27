@@ -5,7 +5,7 @@ import Dialogs from './components/Dialogs/Dialogs';
 import Header from './components/Header/header';
 import MyProfile from './components/MyProfile/my-profile';
 import Sidebar from './components/Sidebar/sidebar';
-import { addPost } from './Redux/state';
+// import { addPost } from './Redux/state';
 
 
 
@@ -23,13 +23,15 @@ function App(props) {
           <Route path="/" 
             element={<MyProfile 
               posts = {props.state.myProfilePage}
-              addPost = {addPost}
+              addPost = {props.addPost}
+              updateNewPostText = {props.updateNewPostText}
             />} 
           />
           <Route path="/myProfile/" 
             element={<MyProfile 
               posts = {props.state.myProfilePage}
-              addPost = {addPost}
+              addPost = {props.addPost}
+              updateNewPostText = {props.updateNewPostText}
             />} 
           />
           <Route path="/Dialogs/"
