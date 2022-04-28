@@ -10,42 +10,41 @@ import Sidebar from './components/Sidebar/sidebar';
 
 
 function App(props) {
-  // props.addPost('sagsdgh');
   return (
-<BrowserRouter>
-    <div className="app-wrapper">
-      <Header />
-      <Sidebar />
+    <BrowserRouter>
+      <div className="app-wrapper">
+        <Header />
+        <Sidebar />
 
-      <div className='app-wrapper-content'>
-        <Routes>
+        <div className='app-wrapper-content'>
+          <Routes>
 
-          <Route path="/" 
-            element={<MyProfile 
-              posts = {props.state.myProfilePage}
-              addPost = {props.addPost}
-              updateNewPostText = {props.updateNewPostText}
-            />} 
-          />
-          <Route path="/myProfile/" 
-            element={<MyProfile 
-              posts = {props.state.myProfilePage}
-              addPost = {props.addPost}
-              updateNewPostText = {props.updateNewPostText}
-            />} 
-          />
-          <Route path="/Dialogs/"
-            element={<Dialogs 
-              dialogs = {props.state.dialogsPage} 
-            />}
-          />
-        </Routes>
+            <Route path="/"
+              element={<MyProfile
+                posts={props.state.myProfilePage}
+                addPost={props.addPost}
+                updateNewPostText={props.updateNewPostText}
+              />}
+            />
+            <Route path="/myProfile/"
+              element={<MyProfile
+                posts={props.state.myProfilePage}
+                addPost={props.addPost}
+                updateNewPostText={props.updateNewPostText}
+              />}
+            />
+            <Route path="/Dialogs/"
+              element={<Dialogs
+                dialogs={props.state.dialogsPage}
+              />}
+            />
+          </Routes>
+        </div>
+
       </div>
 
-    </div>
-
     </BrowserRouter>
-  );
+  )
 }
 
 export default App;

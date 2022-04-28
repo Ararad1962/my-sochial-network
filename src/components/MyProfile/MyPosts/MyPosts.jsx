@@ -1,6 +1,6 @@
 import React from 'react';
 // import { addPost } from '../../../Redux/state';
-import s from './MyPosts.module.css'
+import style from './MyPosts.module.css'
 import Post from './Post/Post';
 
 
@@ -22,7 +22,7 @@ const MyPosts = (props) => {
    }
 
    return (
-      <div className={s.postBlock}>
+      <div className={style.postBlock}>
          <h3>My posts</h3>
          <div>
             <div>
@@ -34,7 +34,7 @@ const MyPosts = (props) => {
                <button onClick={addNewPost}>Add New Post</button>
             </div>
          </div>
-         <div className={s.item}>
+         <div className={style.item}>
            {
               PostsElements
            }

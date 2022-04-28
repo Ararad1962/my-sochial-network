@@ -1,6 +1,6 @@
 import React from 'react';
 // import { addPost } from '../../Redux/state';
-import s from './my-profile.module.css'
+import style from './my-profile.module.css'
 import MyPosts from './MyPosts/MyPosts';
 import ProfileInfo from './ProfileInfo/ProfileInfo';
 
@@ -10,7 +10,7 @@ const MyProfile = (props) => {
    
    return (
 
-      <div className={s.myProfile}>
+      <div className={style.myProfile}>
          <ProfileInfo />
          <MyPosts Posts = {props.posts.PostData}
             addPost = {props.addPost}

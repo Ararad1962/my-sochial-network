@@ -1,15 +1,15 @@
 import React from 'react';
-import s from './ProfileInfo.module.css'
+import style from './ProfileInfo.module.css'
 
 
 
 const ProfileInfo = () => {
    return (
-      <div className={s.profileInfo}>
+      <div className={style.profileInfo}>
          <div >
-            <img className={s.imgContent} alt='someone' src='https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg' />
+            <img className={style.imgContent} alt='someone' src='https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg' />
          </div>
-         <div className={s.descriptionBlock}>
+         <div className={style.descriptionBlock}>
             ava+description
          </div>
       </div>

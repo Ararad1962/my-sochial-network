@@ -1,13 +1,29 @@
 
 
-import state from './Redux/state';
-import { rerenderEntireTree } from './render';
-
-
+import state, { addPost, subscribe,updateNewPostText } from './Redux/state';
 // import { BrowserRouter } from 'react-router-dom';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
 
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+export let rerenderEntireTree = (state) => {
+   root.render(
+      <React.StrictMode>
+         <App state={state} 
+         addPost={addPost} 
+         updateNewPostText = {updateNewPostText} />
+      </React.StrictMode>
+   );
+}
+
+reportWebVitals();
 rerenderEntireTree(state);
+subscribe(rerenderEntireTree);
 
 //React 17
 // ReactDOM.render(
