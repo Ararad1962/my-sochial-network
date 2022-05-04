@@ -12,6 +12,7 @@ const MyPosts = (props) => {
    let newPostElement = React.createRef();
 
    const addNewPost = () => {
+      debugger;
       // let newPostContent = newPostElement.current.value;
       props.addPost();
    }
