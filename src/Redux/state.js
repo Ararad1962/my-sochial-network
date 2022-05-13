@@ -2,10 +2,7 @@ import dialogsReducer from "./dialogsReducer";
 import profileReducer from "./myProfileReducer";
 import sidebarReducer from "./sidebarReducer";
 
-// const ADD_POST = 'ADD_POST';
-// const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT'
-// const UPDATE_NEW_MESSAGE_BODY = 'UPDATE_NEW_MESSAGE_BODY'
-// const SEND_NEW_MESSAGE = 'SEND_NEW_MESSAGE'
+
 
 let store = {
    _state: {
@@ -52,43 +49,12 @@ let store = {
 
       this._callSubscriber(this._state);
 
-      // if (action.type === ADD_POST) {
-      //    let newPost = {
-      //       id: 5,
-      //       message: this._state.myProfilePage.newPostText,
-      //       likesCount: 0
-      //    };
-      //    this._state.myProfilePage.PostData.push(newPost);
-      //    this._state.myProfilePage.newPostText = '';
-      //    this._callSubscriber(this._state);
-      // } else if (action.type === UPDATE_NEW_POST_TEXT) {
-      //    this._state.myProfilePage.newPostText = action.newText;
-      //    this._callSubscriber(this._state);
-      // } else if (action.type === UPDATE_NEW_MESSAGE_BODY) {
-      //    this._state.dialogsPage.newMessageBody = action.newMessageBody;
-      //    this._callSubscriber (this._state);
-      // } else if (action.type === SEND_NEW_MESSAGE) {
-      //    this._state.dialogsPage.MessageData.push({
-      //       id: 4,
-      //       message: this._state.dialogsPage.newMessageBody
-      //    });
-      //    this._state.dialogsPage.newMessageBody = action.newMessageBody;
-      //    this._state.dialogsPage.newMessageBody = '';
-      //    this._callSubscriber (this._state);
-      // }
+      
    }
 }
 
-export const addPostActionCreator = () => ({ type: 'ADD_POST'})
-export const updateNewPostTextActionCreator = (text) => ({
-      type: 'UPDATE-NEW-POST-TEXT',
-      newText: text
-   })
-export const sendNewMessageActCreator = ()=> ({type: 'SEND_NEW_MESSAGE'})
-export const updateNewMessageBodyActCreator = (body) => ({
-   type: 'UPDATE_NEW_MESSAGE_BODY',
-   newMessageBody: body
-   })
+
+
 
 window.store = store;
 
