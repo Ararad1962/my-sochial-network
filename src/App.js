@@ -25,6 +25,7 @@ function App(props) {
                 dispatch = {props.dispatch}
               />}
             />
+
             <Route path="/myProfile/"
               element={<MyProfile
                 posts={props.state.myProfilePage}
@@ -34,6 +35,7 @@ function App(props) {
             <Route path="/Dialogs/"
               element={<Dialogs
                 dialogs={props.state.dialogsPage}
+                dispatch = {props.dispatch}
               />}
             />
           </Routes>
