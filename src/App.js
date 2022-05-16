@@ -10,6 +10,7 @@ import Sidebar from './components/Sidebar/sidebar';
 
 
 function App(props) {
+  
   return (
     <BrowserRouter>
       <div className="app-wrapper">
