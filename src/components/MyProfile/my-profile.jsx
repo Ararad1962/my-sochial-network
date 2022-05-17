@@ -1,7 +1,8 @@
 import React from 'react';
 // import { addPost } from '../../Redux/state';
 import style from './my-profile.module.css'
-import MyPosts from './MyPosts/MyPosts';
+// import MyPosts from './MyPosts/MyPosts';
+import MyPostsContainer from './MyPosts/MyPosts-container';
 import ProfileInfo from './ProfileInfo/ProfileInfo';
 
 
@@ -12,9 +13,9 @@ const MyProfile = (props) => {
 
       <div className={style.myProfile}>
          <ProfileInfo />
-         <MyPosts Posts = {props.posts.PostData}
-            dispatch = {props.dispatch} 
-            newPostText = {props.posts.newPostText} 
+         <MyPostsContainer store = {props.store}
+            // dispatch = {props.dispatch} 
+            // newPostText = {props.posts.newPostText} 
          />
 
       </div>

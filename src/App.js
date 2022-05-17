@@ -22,15 +22,17 @@ function App(props) {
 
             <Route path="/"
               element={<MyProfile
-                posts={props.state.myProfilePage}
-                dispatch = {props.dispatch}
+                store = {props.store}
+                // posts={props.state.myProfilePage}
+                // dispatch = {props.dispatch}
               />}
             />
 
             <Route path="/myProfile/"
               element={<MyProfile
-                posts={props.state.myProfilePage}
-                dispatch = {props.dispatch}
+                store = {props.store}
+                // posts={props.state.myProfilePage}
+                // dispatch = {props.dispatch}
               />}
             />
             <Route path="/Dialogs/"
