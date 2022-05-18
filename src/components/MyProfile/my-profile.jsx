@@ -2,7 +2,7 @@ import React from 'react';
 // import { addPost } from '../../Redux/state';
 import style from './my-profile.module.css'
 // import MyPosts from './MyPosts/MyPosts';
-import MyPostsContainer from './MyPosts/MyPosts-container';
+import MyPostsContainer from './MyPosts/MyPosts-Container';
 import ProfileInfo from './ProfileInfo/ProfileInfo';
 
 
