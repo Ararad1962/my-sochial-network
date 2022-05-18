@@ -2,7 +2,7 @@ import React from "react";
 import DialogItem from "./DialogItem/DialogItem";
 import s from "./Dialogs.module.css";
 import Message from "./Message/Message";
-
+debugger;
 function Dialogs(props) {
 
    let state = props.dialogsPage;

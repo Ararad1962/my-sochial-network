@@ -13,7 +13,8 @@ const MyProfile = (props) => {
 
       <div className={style.myProfile}>
          <ProfileInfo />
-         <MyPostsContainer store = {props.store}
+         <MyPostsContainer 
+            // store = {props.store}
             // dispatch = {props.dispatch} 
             // newPostText = {props.posts.newPostText} 
          />
