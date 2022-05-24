@@ -12,7 +12,7 @@ import StoreContext from './StoreContext'
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-export let rerenderEntireTree = (state) => {
+export let rerenderEntireTree = () => {
 
    root.render(
 

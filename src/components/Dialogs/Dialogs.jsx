@@ -35,7 +35,7 @@ function Dialogs(props) {
                {MessageElements}
             </div>
             <div>
-               <textarea value={props.newMessageBody}
+               <textarea value={state.newMessageBody}
                   onChange={onNewMessageChange}
                   placeholder='Enter your message'></textarea>
             </div>

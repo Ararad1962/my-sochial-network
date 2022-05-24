@@ -29,7 +29,7 @@ const dialogsReducer = (state = initialState, action) => {
             message: state.newMessageBody
          });
          state.newMessageBody = action.newMessageBody;
-         state.newMessageBody = '';
+         state.newMessageBody = "";
          return state;
       }
         
